@@ -13,6 +13,7 @@ import (
 var assets embed.FS
 
 func main() {
+	runtime := &api.Runtime{}
 	app := &api.App{}
 
 	// Create application
@@ -24,8 +25,9 @@ func main() {
 			Assets: assets,
 		},
 		// BackgroundColour: &options.RGBA{R: 27, G: 38, B: 54, A: 1},
-		OnStartup: app.Startup,
+		OnStartup: runtime.Startup,
 		Bind: []interface{}{
+			runtime,
 			app,
 		},
 	})

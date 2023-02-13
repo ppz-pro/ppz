@@ -1,15 +1,10 @@
+import Left from './left'
+import Right from './right'
+
 export default
 function App() {
   return <div className = 'app'>
     <Left />
-    <Pages />
+    <Right />
   </div>
-}
-
-function Left() {
-  return <div>left</div>
-}
-
-function Pages() {
-  return <div>pages</div>
 }
