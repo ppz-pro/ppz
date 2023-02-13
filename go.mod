@@ -1,4 +1,4 @@
-module changeme
+module github.com/ppz-pro/ppz
 
 go 1.18
 
