@@ -7,7 +7,7 @@ class Left extends React.Component {
   async componentDidMount() {
     const res = await LoadConfig()
     if(res.Err) {
-      console.error(res.Err)
+      console.error(res)
     }
   }
   render() {
